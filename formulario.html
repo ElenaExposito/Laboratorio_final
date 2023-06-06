@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Laboratorio final</title>
+
+    <link rel="stylesheet" type="text/css" href="./reset.css" />
+    <link rel="stylesheet" type="text/css" href="./formulario.css" />
+  </head>
+
+  <body>
+    <form class="formulario_registro" method="post" action="formulario.php">
+      <h1>Formulario de Registro</h1>
+
+      <input
+        type="text"
+        id="nombre"
+        name="nombre"
+        class="campo_texto"
+        placeholder="Nombre"
+        required
+      />
+
+      <input
+        type="text"
+        id="apellidoUno"
+        name="apellidoUno"
+        class="campo_texto"
+        placeholder="Primer Apellido"
+        required
+      />
+
+      <input
+        type="text"
+        id="apellidoDos"
+        name="apellidoDos"
+        class="campo_texto"
+        placeholder="Segundo Apellido"
+        required
+      />
+
+      <input
+        type="email"
+        id="email"
+        name="email"
+        class="campo_texto"
+        placeholder="Email"
+        required
+      />
+
+      <input
+        type="text"
+        id="usuario"
+        name="usuario"
+        class="campo_texto"
+        placeholder="Login o usuario"
+        required
+      />
+
+      <input
+        type="password"
+        id="password"
+        name="password"
+        placeholder="Password"
+        class="campo_texto"
+        minlength="4"
+        maxlength="8"
+        required
+      />
+
+      <div class="contenedor_botones">
+        <input class="boton" type="submit" name="submit" value="Enviar" />
+
+        <input class="boton" type="reset" name="reset" value="Reset" />
+      </div>
+
+      <p id="mensajeError" hidden>Error: el usuario ya existe</p>
+    </form>
+    <script>
+      var urlParams = new URLSearchParams(window.location.search);
+      var correoExiste = urlParams.get("correoExiste");
+      var mensajeError = document.getElementById("mensajeError");
+      console.log(correoExiste);
+
+      if (correoExiste) {
+        mensajeError.hidden = false;
+      }
+    </script>
+  </body>
+</html>

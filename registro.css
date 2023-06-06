@@ -1,0 +1,62 @@
+body {
+  font-family: "Ubuntu", sans-serif;
+  background: url("./Imagenes/fondo.jpg") no-repeat;
+  background-size: cover;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.tabla {
+  background-image: url("./Imagenes/papiro.png");
+  background-size: cover;
+  border-radius: 16px;
+  min-width: 325px;
+  padding: 16px;
+}
+
+h1 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 46px;
+  color: white;
+  letter-spacing: 5px;
+  text-shadow: 1px 1px 1px #333;
+  padding-bottom: 12px;
+}
+
+tr,
+td {
+  border-bottom: 1px solid white;
+  color: white;
+  text-align: center;
+  width: 100%;
+  padding-top: 8px;
+  padding-bottom: 4px;
+}
+
+th {
+  border-bottom: 1px solid white;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  width: 100%;
+  padding-top: 8px;
+  padding-bottom: 4px;
+}
+
+.volver {
+  all: unset;
+  margin-top: 16px;
+  color: white;
+  cursor: pointer;
+}
+
+.volver:hover {
+  text-decoration: underline;
+}

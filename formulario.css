@@ -1,0 +1,76 @@
+body {
+  font-family: "Ubuntu", sans-serif;
+  background: url("./Imagenes/fondo.jpg") no-repeat;
+  background-size: cover;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.formulario_registro {
+  background-image: url("./Imagenes/papiro.png");
+  background-size: cover;
+  border-radius: 16px;
+  max-width: 720px;
+  min-width: 325px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+h1 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 46px;
+  color: white;
+  letter-spacing: 5px;
+  text-shadow: 1px 1px 1px #333;
+  padding-bottom: 12px;
+}
+
+.campo_texto {
+  all: unset;
+  max-width: 425px;
+  border-bottom: 1px solid white;
+  color: white;
+  text-align: center;
+  width: 100%;
+}
+
+.campo_texto::placeholder {
+  color: white;
+  text-align: center;
+  opacity: 65%;
+  font-weight: 200;
+}
+
+.contenedor_botones {
+  display: flex;
+  gap: 8px;
+  max-width: 425px;
+  width: 100%;
+  padding-top: 8px;
+}
+
+.boton {
+  all: unset;
+  border: 2px solid white;
+  border-radius: 8px;
+  padding: 8px;
+  color: white;
+  cursor: pointer;
+  opacity: 80%;
+  flex-grow: 1;
+  text-align: center;
+  font-weight: 700;
+}
+
+.boton:hover {
+  opacity: 100%;
+}
